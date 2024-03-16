@@ -8,7 +8,6 @@ def main() -> None:
             if i[1] == -1:
                 i[1] = 0
             row = f"{i[0]} в запасах еще есть - {i[1]}\n"
-            print(row)
             with open('magicaPotions.txt', 'a') as output:
                 output.write(row)
 
