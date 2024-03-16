@@ -2,6 +2,10 @@ import csv
 
 
 def bubble_sort(collection):
+    """
+    сортировка пузырьком
+    :return: list
+    """
     length = len(collection)
     for i in reversed(range(length)):
         swapped = False
@@ -15,6 +19,10 @@ def bubble_sort(collection):
 
 
 def main():
+    """
+    основная функция программы
+    :return: None
+    """
     nums = {}
     with open("magical.csv") as input_file:
         reader = list(csv.reader(input_file, delimiter=","))[1:]
