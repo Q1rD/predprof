@@ -2,6 +2,10 @@ import csv
 
 
 def main() -> None:
+    """
+    основная функция программы
+    :return: None
+    """
     with open("magical.csv") as input_file:
         reader = list(csv.reader(input_file, delimiter=","))
         for i in reader[1:]:
